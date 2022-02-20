@@ -1,0 +1,27 @@
+<table style="width: 100%">
+  <tr class="row-header">
+    <th>Contractor Name</th>
+    <th>Type</th>
+    <th>Start Date</th>
+    <th>Amount</th>
+    <th>Status</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let contractor of contractors">
+    <td>
+      <img src="{{ contractor.image }}" width="41" height="41" class="" />
+      {{ contractor.name }}
+    </td>
+    <td>{{ contractor.type }}</td>
+    <td>{{ contractor.startDate | date: "MMM d, yyyy" }}</td>
+    <td>{{ contractor.amount | currency: "USD":"code" }}</td>
+    <td>
+      <div class="tag">
+        <app-status-tag [status]="contractor.status"></app-status-tag>
+      </div>
+    </td>
+    <td>
+      <app-contextmenu></app-contextmenu>
+    </td>
+  </tr>
+</table>

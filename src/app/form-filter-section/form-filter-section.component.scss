@@ -1,0 +1,38 @@
+:host ::ng-deep .customCalendar {
+  .p-datepicker-trigger {
+    background: transparent;
+    color: black;
+    border: none;
+    position: absolute;
+  }
+}
+
+:host ::ng-deep .customInput {
+  padding-left: 2.1875rem;
+  border-radius: 0.3125rem !important;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0rem 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.p-field:first-child {
+  padding-left: 0.4375rem !important;
+}
+.p-field:last-child {
+  padding-right: 0.4375rem !important;
+}
+
+:host ::ng-deep .p-dropdown,
+input {
+  box-shadow: 0rem 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .show-mobile {
+    display: block;
+  }
+}

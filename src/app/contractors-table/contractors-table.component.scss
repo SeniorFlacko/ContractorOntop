@@ -1,0 +1,19 @@
+table {
+  background: white;
+  border-collapse: separate;
+  border-spacing: 0px 0.8em;
+  padding: 15px;
+
+  tr {
+    height: 5.625rem;
+    background: #f9f9f9;
+
+    &.row-header {
+      background: white;
+    }
+  }
+}
+
+.tag {
+  width: 80%;
+}

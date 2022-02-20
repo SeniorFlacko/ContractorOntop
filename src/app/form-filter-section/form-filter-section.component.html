@@ -1,0 +1,38 @@
+<div class="p-fluid p-grid p-formgrid">
+  <p-calendar
+    [showIcon]="true"
+    [(ngModel)]="rangeDates"
+    selectionMode="range"
+    inputId="range"
+    placeholder="Created on: "
+    styleClass="customCalendar"
+    inputStyleClass="customInput"
+    class="p-field p-col-12 p-md-3"
+  ></p-calendar>
+
+  <p-dropdown
+    [options]="contractors"
+    [(ngModel)]="selectedContractor"
+    placeholder="Contract type"
+    optionLabel="name"
+    [showClear]="true"
+    class="p-field p-col-12 p-md-3"
+  ></p-dropdown>
+
+  <div class="p-field p-col-12 p-md-3">
+    <input type="text" pInputText placeholder="Contractor Name" />
+  </div>
+
+  <p-dropdown
+    [options]="status"
+    [(ngModel)]="selectedStatus"
+    placeholder="Status"
+    optionLabel="name"
+    [showClear]="true"
+    class="p-field p-col-12 p-md-3"
+  ></p-dropdown>
+</div>
+
+<div class="show-mobile">
+  <app-clear-filters-button></app-clear-filters-button>
+</div>

@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <app-contractor-label contractorName="Volkswagen USA"></app-contractor-label>
+  <app-search-bar-section></app-search-bar-section>
+  <app-form-filter-section></app-form-filter-section>
+  <app-contractors-table
+    [contractors]="contractors"
+    class="hideMobile"
+  ></app-contractors-table>
+
+  <ng-container *ngFor="let contractor of contractors">
+    <app-contractor-card
+      [contractor]="contractor"
+      class="showMobile"
+    ></app-contractor-card>
+  </ng-container>
+</div>

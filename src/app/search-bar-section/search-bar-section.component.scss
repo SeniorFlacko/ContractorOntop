@@ -1,0 +1,12 @@
+.search-bar {
+  app-search-box {
+    flex: 6;
+  }
+  app-filter-button {
+    margin: 0 1.125rem;
+    flex: 1;
+  }
+  app-new-hire-button {
+    flex: 2;
+  }
+}

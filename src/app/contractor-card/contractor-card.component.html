@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="d-flex justify-content-between grey">
+    <div class="title">Contractor name</div>
+    {{ contractor.name }}
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="title">Type</div>
+    {{ contractor.type }}
+  </div>
+  <div class="d-flex justify-content-between grey">
+    <div class="title">Start Date</div>
+    {{ contractor.startDate | date: "MMM d, yyyy" }}
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="title">Amount</div>
+    {{ contractor.amount }}
+  </div>
+  <div class="d-flex justify-content-between tag grey align-items-center">
+    <div class="title">Status</div>
+    <div>
+      <app-status-tag [status]="contractor.status"></app-status-tag>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="title">Actions</div>
+    <app-contextmenu icon="more_horiz"></app-contextmenu>
+  </div>
+</div>

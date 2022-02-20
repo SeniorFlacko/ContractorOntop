@@ -1,0 +1,30 @@
+.search-box-container {
+  width: 100%;
+
+  i {
+    color: #dadada;
+  }
+
+  input {
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    padding-left: 2.1875rem;
+    background: #ffffff;
+    border: 0.0313rem solid #989b9b;
+    box-sizing: border-box;
+    border-radius: 0.3125rem;
+    height: 3.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    &::placeholder {
+      font-family: Aileron-LightItalic;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.0063rem;
+      color: #c4c4c4;
+    }
+  }
+}
